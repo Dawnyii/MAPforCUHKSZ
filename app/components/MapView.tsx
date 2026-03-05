@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Trash2, Beaker } from 'lucide-react';
 import type { BinLocation } from '../App';
-import mapImage from 'figma:asset/b078719e9cd78e4a5dbd3c9c422ab67cf4640673.png';
+
 
 interface MapViewProps {
   bins: BinLocation[];
@@ -13,8 +13,7 @@ export default function MapView({ bins, onBinClick }: MapViewProps) {
     <div className="relative w-full h-full overflow-hidden">
       {/* 地图背景 */}
       <div className="absolute inset-0">
-        <img 
-          src={mapImage} 
+<img src="/map.png"
           alt="校园地图" 
           className="w-full h-full object-cover"
         />
